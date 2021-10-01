@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="desafio.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <p class="p3">LOGIN</p>
+        <input type="text" name="usuario" id="usuario" placeholder="insira o usuario" /><br />
+
+        <p>
+            <input type="password" name="senha" id="senha" placeholder="senha" /><br />
+        </p>
+        <p>
+            <input type="button" value="login" name="login" id="btn" class="submit" onclick="login()" />
+        </p>
+        <p>
+            <input type="button" value="Novo Login" name="registro" id="registro" class="submit" data-bs-toggle="modal"
+                data-bs-target="#exampleModal"  />
+        </p>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" name="usuario" id="newusuario" class="texto"
+                        placeholder="insira o usuario" /><br />
+
+                    <p>
+                        <input type="password" name="senha" id="newsenha" class="texto" placeholder="senha" /><br />
+                    </p>
+                    <p>
+                        <input type="password" name="repita a sua senha" id="rptsenha" class="texto"
+                            placeholder="repita a senha" /><br />
+                    </p>
+                    <p>
+                        <input type="button" value="Registrar" name="Registrar" id="btn" class="texto"
+                            onclick="novo()" />
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <script src="desafio.js"></script>
+</body>
+
+</html>
+<!-- 
+     <section>
+      <p class="p3">REGISTRO</p>
+      <input
+        type="text"
+        name="usuario"
+        id="usuario"
+        placeholder="insira o usuario"
+      /><br />
+
+      <p>
+        <input
+          type="password"
+          name="senha"
+          id="senha"
+          placeholder="senha"
+        /><br />
+      </p>
+      <p>
+        <input
+          type="password"
+          name="repita a sua senha"
+          id="rptsenha"
+          placeholder="repita a senha"
+        /><br />
+      </p>
+      <p>
+        <input
+          type="button"
+          value="Registrar"
+          name="Registrar"
+          id="btn"
+          class="submit"
+          onclick="registrar()"
+        />
+      </p>
+      </section> -->
